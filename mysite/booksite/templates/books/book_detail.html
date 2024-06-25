@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ book.title }}</title>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Publication Date:</strong> {{ book.published_date }}</p>
+    <p><strong>Pages:</strong> {{ book.pages }}</p>
+   
+            <li>No books found.</li>
+    <a href="{% url 'book_list' %}"><button>Back to Book List</button></a>
+</body>
+</html>
